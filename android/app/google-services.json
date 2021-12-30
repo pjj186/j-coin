@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "975483511593",
+    "project_id": "j-coin-18e71",
+    "storage_bucket": "j-coin-18e71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975483511593:android:1941894f61353685b5cd38",
+        "android_client_info": {
+          "package_name": "com.jcoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975483511593-0fb5q4s03vmfor4q003g0i4cckdapnsb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jcoin",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "975483511593-rm6ombffmgvqon4o9epap5phjnkkkeuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOYlRtfGN5jUtvLE7Z7HYdRnyb-7HulRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975483511593-rm6ombffmgvqon4o9epap5phjnkkkeuh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
