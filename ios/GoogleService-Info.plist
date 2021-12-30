@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>975483511593-p6v52lt0shhpngqd59ogmkldtr1m1n2h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.975483511593-p6v52lt0shhpngqd59ogmkldtr1m1n2h</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>975483511593-0fb5q4s03vmfor4q003g0i4cckdapnsb.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBN48-kgC1rQ50riY2RLIJNM1wLNFc_smE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>975483511593</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.name.jcoin</string>
+	<key>PROJECT_ID</key>
+	<string>j-coin-18e71</string>
+	<key>STORAGE_BUCKET</key>
+	<string>j-coin-18e71.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:975483511593:ios:48a44d014402bf2cb5cd38</string>
+</dict>
+</plist>
