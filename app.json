@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "j-coin",
+    "slug": "j-coin",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "j-coin"
+}
