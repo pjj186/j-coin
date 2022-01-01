@@ -50,6 +50,7 @@ const Home = () => {
       <FlatList
         data={cleanData}
         numColumns={5}
+        keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <Coin>
             <CoinName>{item.name}</CoinName>
