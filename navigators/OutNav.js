@@ -1,0 +1,16 @@
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import React from "react";
+import Login from "../screens/Login";
+import Join from "../screens/Join";
+
+const Nav = createNativeStackNavigator();
+
+// 로그인 화면
+const OutNav = () => (
+  <Nav.Navigator>
+    <Nav.Screen name="Login" component={Login} />
+    <Nav.Screen name="Join" component={Join} />
+  </Nav.Navigator>
+);
+
+export default OutNav;
