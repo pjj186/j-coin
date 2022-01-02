@@ -1,5 +1,6 @@
-import React, { useEffect, useReducer, useRef } from "react";
-import { Animated, View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import React, { useEffect, useRef } from "react";
+import { Animated, View, TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
 
 const Wrapper = styled(Animated.createAnimatedComponent(View))`
@@ -15,14 +16,15 @@ const CoinName = styled.Text`
   font-size: 16px;
 `;
 
-const Icon = styled.Image`
+export const Icon = styled.Image`
   border-radius: 20px;
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
 `;
 
-const Coin = ({ symbol, index }) => {
+const Coin = ({ symbol, index, id }) => {
+  const navigation = useNavigation(); // 네비게이션에서 그리는 컴포넌트가 아니라서, 훅을 이용하여 navigaion.navigate 를 사용해야 함
   const opacity = useRef(new Animated.Value(0)).current;
   useEffect(() => {
     Animated.spring(opacity, {
@@ -36,14 +38,19 @@ const Coin = ({ symbol, index }) => {
     outputRange: [0.7, 1],
   });
   return (
-    <Wrapper style={{ flex: 0.31, opacity, transform: [{ scale }] }}>
-      <Icon
-        source={{
-          uri: `https://cryptoicon-api.vercel.app/api/icon/${symbol.toLowerCase()}`,
-        }}
-      />
-      <CoinName>{symbol}</CoinName>
-    </Wrapper>
+    <TouchableOpacity
+      style={{ flex: 0.31 }}
+      onPress={() => navigation.navigate("Detail", { symbol, id })}
+    >
+      <Wrapper style={{ opacity, transform: [{ scale }] }}>
+        <Icon
+          source={{
+            uri: `https://cryptoicon-api.vercel.app/api/icon/${symbol.toLowerCase()}`,
+          }}
+        />
+        <CoinName>{symbol}</CoinName>
+      </Wrapper>
+    </TouchableOpacity>
   );
 };
 
