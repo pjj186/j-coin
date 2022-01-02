@@ -11,7 +11,7 @@ export const history = ({ queryKey }) =>
     `${BASE_URL}/tickers/${queryKey[1]}/historical?start=${
       new Date().toISOString().split("T")[0]
     }&interval=30m`
-  );
+  ).then((res) => res.json());
 
 // new Date().toISOString().split("T")[0]
 // T를 기준으로 문자열을 나누는데, T를 전 후로 배열이 만들어진다. (T는 제외되고)
